@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Catch Chance Calculator</string>
+    <string name="select_a_pokemon">Select a Pokemon</string>
+    <string name="first_turn">First Turn</string>
+    <string name="surfing">Surfing</string>
+    <string name="from_fishing">Fishing/Surfing</string>
+    <string name="night_or_cave">Night/Cave</string>
+    <string name="of_hp_left">% of HP Left</string>
+    <string name="caught_before">Caught Before</string>
+    <string name="target_s_level">Target\'s Level</string>
+    <string name="your_level">Your Level</string>
+    <string name="catch_chance"></string>
+
+    <string-array name="Pokemon">
+        <item>Abomasnow</item>
+        <item>Accelgor</item>
+        <item>Aegislash</item>
+        <item>Alcremie</item>
+        <item>Appletun</item>
+        <item>Applin</item>
+        <item>Araquanid</item>
+        <item>Arcanine</item>
+        <item>Arctovish</item>
+        <item>Arctozolt</item>
+        <item>Aromatisse</item>
+        <item>Arrokuda</item>
+        <item>Avalugg</item>
+        <item>Axew</item>
+        <item>Baltoy</item>
+        <item>Barbaracle</item>
+        <item>Barboach</item>
+        <item>Barraskewda</item>
+        <item>Basculin</item>
+        <item>Beartic</item>
+        <item>Beheeyem</item>
+        <item>Bellossom</item>
+        <item>Bergmite</item>
+        <item>Bewear</item>
+        <item>Binacle</item>
+        <item>Bisharp</item>
+        <item>Blipbug</item>
+        <item>Boldore</item>
+        <item>Boltund</item>
+        <item>Bonsly</item>
+    </string-array>
+
+    <string-array name="ListofPokeBalls">
+        <item>PokeBall</item>
+        <item>GreatBall</item>
+        <item>UltraBall</item>
+        <item>PremierBall</item>
+        <item>FriendBall</item>
+        <item>LureBall</item>
+        <item>QuickBall</item>
+        <item>RepeatBall</item>
+        <item>LuxuryBall</item>
+        <item>HealBall</item>
+        <item>NestBall</item>
+        <item>DreamBall</item>
+        <item>DiveBall</item>
+        <item>LevelBall</item>
+        <item>DuskBall</item>
+        <item>TimerBall</item>
+    </string-array>
+
+    <string-array name="StatusEffect">
+        <item>None</item>
+        <item>Paralyzed</item>
+        <item>Asleep</item>
+        <item>Burned</item>
+        <item>Frozen</item>
+        <item>Poisoned</item>
+    </string-array>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/playLVL"
+        android:layout_width="146dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="Your Level"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TargetLVL" />
+
+    <Spinner
+        android:id="@+id/PKspinner"
+        android:layout_width="163dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:entries="@array/Pokemon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/Pokeball"
+        android:layout_width="174dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/ListofPokeBalls"
+        android:padding="5sp"
+        app:layout_constraintBottom_toTopOf="@+id/Fishing"
+        app:layout_constraintEnd_toStartOf="@+id/TargetLVL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PKspinner" />
+
+    <Switch
+        android:id="@+id/Fishing"
+        android:layout_width="150dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:text="@string/from_fishing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pokeball" />
+
+    <Switch
+        android:id="@+id/NightCave"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:minHeight="48dp"
+        android:text="@string/night_or_cave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fishing" />
+
+    <Switch
+        android:id="@+id/Repeat"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:minHeight="48dp"
+        android:text="@string/caught_before"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NightCave" />
+
+    <EditText
+        android:id="@+id/PercentofHealth"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="% of Target HP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TargetLVL"
+        android:layout_width="143dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Level of Target"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PercentofHealth" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:text="Status Effect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Repeat" />
+
+    <Spinner
+        android:id="@+id/StatusEffect"
+        android:layout_width="178dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="26dp"
+        android:entries="@array/StatusEffect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/TurnNum"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="Number of Turns"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playLVL" />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TurnNum" />
+
+    <TextView
+        android:id="@+id/calcChance"
+        android:layout_width="269dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/catch_chance"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
